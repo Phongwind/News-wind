@@ -13,101 +13,134 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
-        <div class="col-4 pt-1">
-
-        </div>
-        <div class="col-4 text-center">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">
-                <img src="/img/logo.png" alt="logo" style="width:100px;">
-            </a>
-        </div>
-        <div class="col-4 d-flex justify-content-end align-items-center" style="margin-right: 3%;">
-            <a class="text-muted" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mx-3">
-                    <circle cx="10.5" cy="10.5" r="7.5"></circle>
-                    <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
-                </svg>
-            </a>
-            <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"
-                style="margin-right: 3%;">
-        </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="width: 240px;">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="/img/logo.png" alt="logo" style="width:100px;">
+        </a>
+        <!-- <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search"> -->
     </nav>
 
-    <div class="container">
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" href="#">World</a>
-                <a class="p-2 text-muted" href="#">U.S.</a>
-                <a class="p-2 text-muted" href="#">Technology</a>
-                <a class="p-2 text-muted" href="#">Design</a>
-                <a class="p-2 text-muted" href="#">Culture</a>
-                <a class="p-2 text-muted" href="#">Business</a>
-                <a class="p-2 text-muted" href="#">Politics</a>
-                <a class="p-2 text-muted" href="#">Opinion</a>
-                <a class="p-2 text-muted" href="#">Science</a>
-                <a class="p-2 text-muted" href="#">Health</a>
-                <a class="p-2 text-muted" href="#">Style</a>
-                <a class="p-2 text-muted" href="#">Travel</a>
-            </nav>
-        </div>
-    </div>
+    <div class="container-fluid">
 
-    <div class="container" style="margin-top:30px">
         <div class="row">
-            <div class="col-sm-4">
-                <h2>Newspaper</h2>
-                <ul class="nav nav-pills flex-column">
-                    <div class="BBC" style="display: flex;">
-                        <span><input type="checkbox"></span>
-                        <li><a href="#">BBC</a></li>
-                    </div>
-                    <div class="BBC" style="display: flex;">
-                        <span><input type="checkbox"></span>
-                        <li><a href="#">CNN</a></li>
-                    </div>
-                    <div class="BBC" style="display: flex;">
-                        <span><input type="checkbox"></span>
-                        <li><a href="#">The Vege</a></li>
-                    </div>
-                    <div class="BBC" style="display: flex;">
-                        <span><input type="checkbox"></span>
-                        <li><a href="#">The Wall Street Jounal</a></li>
-                    </div>
-                    <div class="BBC" style="display: flex;">
-                        <span><input type="checkbox"></span>
-                        <li><a href="#">The New York Times</a></li>
-                    </div>
-                </ul>
-                <hr class="d-sm-none">
-            </div>
-            <div class="col-sm-8">
-                <div class="breakingnews" id="breakingnews" style="margin-bottom: 10%;">
-                </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div id="newsArea" style="display: flex; flex-wrap: wrap"></div>
+            <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                SETTING & PRIVACY
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                PROFILE
+                            </a>
+                        </li>
+                    </ul>
 
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>EXPLORE</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                World
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Business
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span data-feather="file-text"></span>
+                                Teachnology
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                Sport
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main role="main" class="col-md-8 ml-sm-auto pt-3 px-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                    <h1 class="h2">BREAKING NEWS</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <input class="form-control form-control-dark w-100" type="text" placeholder="Search"
+                            aria-label="Search">
                     </div>
                 </div>
-            </div>
+                <div id="newsArea" style="display: flex; flex-wrap: wrap"></div>
+                <button>Load more</button>
+
+
+            </main>
+
+
+
+            <nav class="col-md-2 d-none d-md-block bg-light justify-content-end"
+                style="border-radius: 20px;height: 20%;">
+                <div class="sidebar-sticky">
+
+                    <h6
+                        class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                        <span>NEWSPAPERS</span>
+                        <a class="d-flex align-items-center text-muted" href="#">
+                            <span data-feather="plus-circle"></span>
+                        </a>
+                    </h6>
+                    <ul class="nav flex-column mb-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><input type="checkbox"></span>
+                                BCC
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><input type="checkbox"></span>
+                                CNN
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><input type="checkbox"></span>
+                                The Verge
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <span><input type="checkbox"></span>
+                                Techcrunch
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+
         </div>
+
+
     </div>
-    </div>
-
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <p>Footer</p>
-    </div>
-
-
-    <!-- <div class="row">
-                       
-                        <div id="newsArea" style="display: flex; flex-wrap: wrap"></div>
-                     
-
-                    </div> -->
-
 
     <!--Script-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -119,6 +152,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+    <script src="/js/moment-with-locales.js"></script>
     <script src="/js/script.js"></script>
 </body>
 
