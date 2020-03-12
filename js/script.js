@@ -4,7 +4,7 @@ let newListheadline = []
 
 let callAPI = async () => {
     let apiKey = `75b17a84438b4ff69f993c0ec88706d3`
-    let url = `http://newsapi.org/v2/everything?domains=wsj.com,goal.com/en,theverge.com&pageSize=10&apiKey=${apiKey}`
+    let url = `http://newsapi.org/v2/everything?domains=wsj.com&pageSize=10&apiKey=${apiKey}`
 
     let data = await fetch(url);
     let result = await data.json();
